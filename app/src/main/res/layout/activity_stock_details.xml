@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:chart="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sam_chordas.android.stockhawk.ui.StockDetailsActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:textAppearance="?android:attr/textAppearanceLarge"
+          android:text="@string/stockdisplay_title"
+          android:id="@+id/textView" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingBottom="@dimen/activity_horizontal_margin"
+          android:id="@+id/valuetext" />
+
+      <com.db.chart.view.LineChartView
+          android:id="@+id/linechart"
+          android:layout_width="match_parent"
+          android:layout_height="200dp"/>
+
+
+  </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
